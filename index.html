@@ -167,10 +167,8 @@
     }
     .avatar img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
     .person h3 { margin: 6px 0 0; font-size: 1em; overflow-wrap: break-word; }
-    .role { margin: 0; color: var(--gold); font-weight: 600; font-size: .8em; }
-    .about { margin: 4px 0 8px; color: var(--soft); font-size: .88em; flex: 1; }
-    .about.todo { font-style: italic; opacity: .75; }
-    .person .btn { width: 100%; justify-content: center; }
+    .person .btn { width: 100%; justify-content: center; margin-top: auto; }
+    .person h3 { margin-bottom: 8px; }
     .li { width: 1.15em; height: 1.15em; fill: currentColor; flex: none; }
 
     /* ---------- Footer ---------- */
@@ -344,52 +342,42 @@ Load
 
 <section class="team" id="team">
   <div class="wrap">
-    <h2>About <span class="hl">Us</span></h2>
+    <h2>About <span class="hl">us</span></h2>
     <p class="sub">The team behind the project. Tap a button to connect on LinkedIn.</p>
 
     <div class="people">
 
-      <!-- To add a photo: upload an image to a "photos" folder in the repo (e.g. photos/tarush.jpg).
+      <!-- To add a photo: upload an image to a "photos" folder in the repo (e.g. photos/tarush.jpg or photos/tarush.png).
            It will automatically replace the initials. To write an about-me: replace the text inside
            the <p class="about"> for that person and delete the "todo" class. -->
 
       <article class="person">
-        <div class="avatar"><span>TS</span><img src="photos/tarush.jpg" alt="Photo of Tarush Srivastava" onerror="this.remove()"></div>
+        <div class="avatar"><span>TS</span><img src="photos/tarush.jpg" alt="Photo of Tarush Srivastava" onerror="var e=['.jpg','.png','.jpeg','.webp'],i=+(this.dataset.i||0)+1;if(i<e.length){this.dataset.i=i;this.src=this.src.replace(/\.[a-z]+$/,e[i]);}else{this.remove();}"></div>
         <h3>Tarush Srivastava</h3>
-        <p class="role">Team member</p>
-        <p class="about todo">About me coming soon.</p>
         <a class="btn" href="https://www.linkedin.com/in/tarushsrivastava/" target="_blank" rel="noopener noreferrer"><svg class="li" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>LinkedIn</a>
       </article>
 
       <article class="person">
-        <div class="avatar"><span>TP</span><img src="photos/tommy.jpg" alt="Photo of Tommy Pham" onerror="this.remove()"></div>
+        <div class="avatar"><span>TP</span><img src="photos/tommy.jpg" alt="Photo of Tommy Pham" onerror="var e=['.jpg','.png','.jpeg','.webp'],i=+(this.dataset.i||0)+1;if(i<e.length){this.dataset.i=i;this.src=this.src.replace(/\.[a-z]+$/,e[i]);}else{this.remove();}"></div>
         <h3>Tommy Pham</h3>
-        <p class="role">Team member</p>
-        <p class="about todo">About me coming soon.</p>
         <a class="btn" href="https://www.linkedin.com/in/tommy-pham-293802329/" target="_blank" rel="noopener noreferrer"><svg class="li" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>LinkedIn</a>
       </article>
 
       <article class="person">
-        <div class="avatar"><span>TK</span><img src="photos/tatiana.png" alt="Photo of Tatiana Kaguu Nyambura" onerror="this.remove()"></div>
+        <div class="avatar"><span>TK</span><img src="photos/tatiana.jpg" alt="Photo of Tatiana Kaguu Nyambura" onerror="var e=['.jpg','.png','.jpeg','.webp'],i=+(this.dataset.i||0)+1;if(i<e.length){this.dataset.i=i;this.src=this.src.replace(/\.[a-z]+$/,e[i]);}else{this.remove();}"></div>
         <h3>Tatiana Kaguu Nyambura</h3>
-        <p class="role">Team member</p>
-        <p class="about todo">About me coming soon.</p>
         <a class="btn" href="https://www.linkedin.com/in/tatiana-kaguu-nyambura-731565272/" target="_blank" rel="noopener noreferrer"><svg class="li" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>LinkedIn</a>
       </article>
 
       <article class="person">
-        <div class="avatar"><span>MK</span><img src="photos/manith.jpg" alt="Photo of Manith Kandanearachchi" onerror="this.remove()"></div>
+        <div class="avatar"><span>MK</span><img src="photos/manith.jpg" alt="Photo of Manith Kandanearachchi" onerror="var e=['.jpg','.png','.jpeg','.webp'],i=+(this.dataset.i||0)+1;if(i<e.length){this.dataset.i=i;this.src=this.src.replace(/\.[a-z]+$/,e[i]);}else{this.remove();}"></div>
         <h3>Manith Kandanearachchi</h3>
-        <p class="role">Team member</p>
-        <p class="about todo">About me coming soon.</p>
         <a class="btn" href="https://www.linkedin.com/in/manith-kandanearachchi-847725355/" target="_blank" rel="noopener noreferrer"><svg class="li" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>LinkedIn</a>
       </article>
 
       <article class="person">
-        <div class="avatar"><span>AV</span><img src="photos/alec.png" alt="Photo of Alec Vitalievich" onerror="this.remove()"></div>
+        <div class="avatar"><span>AV</span><img src="photos/alec.jpg" style="transform:scale(2.1);transform-origin:54% 45%" alt="Photo of Alec Vitalievich" onerror="var e=['.jpg','.png','.jpeg','.webp'],i=+(this.dataset.i||0)+1;if(i<e.length){this.dataset.i=i;this.src=this.src.replace(/\.[a-z]+$/,e[i]);}else{this.remove();}"></div>
         <h3>Alec Vitalievich</h3>
-        <p class="role">Team member</p>
-        <p class="about todo">About me coming soon.</p>
         <a class="btn" href="https://www.linkedin.com/in/alec-vitalievich/" target="_blank" rel="noopener noreferrer"><svg class="li" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>LinkedIn</a>
       </article>
 
